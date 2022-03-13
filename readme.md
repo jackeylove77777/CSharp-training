@@ -12,7 +12,7 @@ todo
 
 # 多线程编程
 
-todo
+* thread01（Thread类的简单使用，以及如何使用带参委托）
 
 # 文件系统
 
@@ -44,7 +44,7 @@ todo
 
 # Asp.net core基础知识
 
-todo
+* 中间件以及自定义中间件
 
 # 反射
 
