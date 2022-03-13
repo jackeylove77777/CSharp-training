@@ -1,2 +1,5 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿using 多线程;
+
+#region Thread01
+Thread01.Run();
+#endregion
