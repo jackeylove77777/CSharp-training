@@ -8,7 +8,7 @@
 
 ## 工厂方法模式
 
-todo
+定义了果园接口Orchard,并且在其中定义了抽象方法CreateFruit,返回Fruit接口,创造水果类的方法由Orchard的实现类来实现，而此时想要添加Watermelon类，只需要再创建一个WatermelonOrchard类实现Orchard接口。不用修改已经写过的代码。
 
 # 多线程编程
 
