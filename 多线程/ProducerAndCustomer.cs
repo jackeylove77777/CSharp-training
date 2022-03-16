@@ -9,7 +9,7 @@ public class ProducerAndCustomer{
             ThreadPool.QueueUserWorkItem(Produce, i);
             ThreadPool.QueueUserWorkItem(Custom, i);
         }
-        Thread.Sleep(50000);
+        Thread.Sleep(30000);
     }
 
     static void Produce(object producerId){
@@ -22,9 +22,15 @@ public class ProducerAndCustomer{
         }
     }
     static void Custom(object customerId){
-        while(productId<100){
+        while(true){
             lock(products){
-                if(products.Count<=0){
+                //products.Count为零时分为两种情况，一是未达到生产的限额（productId=100），二是已达到限额且消费者消费完了产品
+                //第一种情况，消费者应继续等待，而第二种消费者线程应该退出
+                if(products.Count<=0&&productId>=100){
+                    Console.WriteLine($"{customerId}号消费退出消费");
+                    break;
+                }
+                else if(products.Count<=0){
                     Console.WriteLine($"{customerId}号消费者正在等待");
                 }else{
                     Console.WriteLine($"{customerId}号消费者正在消费{products.Dequeue()}号产品");

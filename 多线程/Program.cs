@@ -5,5 +5,9 @@
 #endregion
 
 #region ThreadPool
-threadPool.Run();
+//threadPool.Run();
+#endregion
+
+#region ProducerAndCustomer
+ProducerAndCustomer.Run();
 #endregion
