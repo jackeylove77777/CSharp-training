@@ -9,5 +9,9 @@
 #endregion
 
 #region ProducerAndCustomer
-ProducerAndCustomer.Run();
+//ProducerAndCustomer.Run();
+#endregion
+
+#region Big Data
+SimulateBigData.Run();
 #endregion
