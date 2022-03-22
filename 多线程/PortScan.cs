@@ -7,7 +7,7 @@ namespace 多线程;
 public class PortScan{
     //存放1-1024端口的开放状态
     private static bool[] isOpen = new bool[1025];
-    private static IPAddress ipAddr = IPAddress.Parse("42.192.93.88");//Dns.GetHostEntry ("www.baidu.com").AddressList[0];
+    private static IPAddress ipAddr = Dns.GetHostEntry ("www.baidu.com").AddressList[0];
     private static AutoResetEvent autoResetEvent = new(false);
     public static void Run(){
         ThreadPool.SetMaxThreads(Environment.ProcessorCount*4,Environment.ProcessorCount);

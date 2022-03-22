@@ -1,0 +1,2 @@
+# Tip
+## About Coding
