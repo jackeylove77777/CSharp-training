@@ -48,25 +48,13 @@
 
 * 遍历某个目录下的文件和目录
 
-todo
+* 打开Zip文件
 
 # 多进程编程
 
 todo
 
-# 系统管理
-
-todo
-
 # 并行编程
-
-todo
-
-# Windows注册表
-
-todo
-
-# Office操作
 
 todo
 
@@ -81,6 +69,3 @@ todo
 # 网络编程
 
 todo
-
-
-
